@@ -1,4 +1,3 @@
-import './NotFoundError.css';
 import { useNavigate } from 'react-router-dom';
 import styles from './styles.module.css';
 
