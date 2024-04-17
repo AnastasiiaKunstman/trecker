@@ -1,0 +1,73 @@
+.btn {
+    border: 1px solid #1D6BF3;
+    border-radius: 4px;
+    padding: 3.6% 7%;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.6%;
+    font-size: clamp(12px, 1.1vw, 16px);
+    background: #fff;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.sparkle {
+    fill: #1D6BF3;
+    transition: all 150ms ease;
+}
+
+.text {
+    color: #1D6BF3;
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+        0px 0px 50px 0px #1d6bf347;
+    transform: translateY(-2px);
+}
+
+.btn:hover .text {
+    color: white;
+}
+
+.btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+}
+
+.edit_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    max-height: 50px;
+}
+
+.save_button {
+    width: 250px;
+    background-color: #fff;
+    color: #1D6BF3;
+    height: 50px;
+    border: 1px solid #1D6BF3;
+}
+
+.save_button:hover {
+    color: #fff;
+    background-color: #1D6BF3;
+}
+
+.publish_button {
+    background-color: #5A9BFF;
+    width: 390px;
+    color: #fff;
+    height: 50px;
+}
+
+.publish_button:hover {
+    background-color: #1D6BF3;
+}

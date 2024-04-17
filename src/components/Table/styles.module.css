@@ -1,0 +1,72 @@
+.icon_button__like {
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  background-image: url('../../assets/Like.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+
+.icon_button__like:hover {
+  background-image: url('../../assets/loke-hover.svg');
+}
+
+.icon_button__like.active {
+  background-image: url('../../assets/LikeActive.svg');
+}
+
+
+.icon_button__match {
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  background-image: url('../../assets/circles.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+
+.icon_button__match:hover {
+  background-image: url('../../assets/circles-hover.svg');
+}
+
+.icon_button__match.active {
+  background-image: url('../../assets/circles-active.svg');
+}
+
+.icon_button__telegram {
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  background-image: url('../../assets/telegram.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+
+.icon_button__telegram:hover {
+  background-image: url('../../assets/telegram-hover.svg');
+}
+
+.icon_button__telegram.disabled {
+  background-image: url('../../assets/telegram-disabled.svg');
+}
+
+.icon_button__email {
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  background-image: url('../../assets/email.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+
+.icon_button__email:hover {
+  background-image: url('../../assets/email-hover.svg');
+}
+
+.icon_button__email.disabled {
+  background-image: url('../../assets/email-disabled.svg');
+}
