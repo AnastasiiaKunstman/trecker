@@ -6,6 +6,7 @@ import VacancyForm from "./components/VacancyForm/VacancyForm";
 import StudentTable from "./components/Table/StudentTable";
 import Profile from "./components/Profile/Profile";
 import InvitedStudents from "./components/Student/InvitedStudents";
+import NotFoundError from "./components/NotFoundError/NotFoundError";
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
       <Route path="/students/viewed" element={<InvitedStudents />} />
 
       <Route path="/profile" element={<Profile />} />
+      <Route path="*" element={<NotFoundError />} />
+
     </Routes>
   )
 }
