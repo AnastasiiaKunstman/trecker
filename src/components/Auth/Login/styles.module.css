@@ -17,6 +17,20 @@
     gap: 12px;
 }
 
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link_password {
+    color: #5A9BFF;
+    text-decoration: none;
+}
+
+.link_password:hover {
+    opacity: .7; 
+}
+
 .link:hover {
     opacity: .7;
 }

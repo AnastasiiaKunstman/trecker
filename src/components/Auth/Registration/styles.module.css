@@ -17,6 +17,12 @@
     gap: 10px;
 }
 
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 .link:hover {
     opacity: .7;
 }

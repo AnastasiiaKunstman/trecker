@@ -1,8 +1,8 @@
-import { Box, Button, Link, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { loginShema } from '../../../utils/validation/yupSchema';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Input from '../../Input/Input';
 import styles from './styles.module.css';
 
@@ -49,7 +49,7 @@ const Login = () => {
               registerName="password"
               error={!!errors.password}
             />
-            <Link className={styles.link} sx={{ mt: '-4px' }} href="/password-recovery" variant="body2" underline="none">
+            <Link className={styles.link_password}  to="/password-recovery">
               Не помню пароль
             </Link>
             <Button
@@ -71,10 +71,7 @@ const Login = () => {
           <Typography variant="body1" sx={{ fontWeight: 400, color: '#797981' }}>Новый пользователь?</Typography>
           <Link
             className={styles.link}
-            href="/signup"
-            variant="body2"
-            underline="none"
-            sx={{ py: 3, color: '#fff' }}
+            to="/signup"
           >
             Зарегистрироваться
           </Link>

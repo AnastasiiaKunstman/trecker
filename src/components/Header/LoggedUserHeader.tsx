@@ -28,12 +28,13 @@ const LoggedUserHeader: FC = () => {
                 <img className={styles.img__logo} src={Logo} alt="Логотип" />
               </MenuItem>
               {pages.map((page) => (
-                <Button
+                <Link
                   key={page.id}
-                  href={page.path}
+                  to={page.path}
+                  className={styles.link}
                 >
                   {page.name}
-                </Button>
+                </Link>
               ))}
             </Box>
             <Box sx={{ display: 'flex', gap: '20px', alignItems: 'center' }} >

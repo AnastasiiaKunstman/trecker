@@ -98,7 +98,7 @@ function StudentTable() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {location.pathname === '/students/' ? (
+                {location.pathname === '/students' ? (
                   students?.map((student) => (
                     <TableActive
                       key={student.id}

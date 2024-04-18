@@ -1,11 +1,12 @@
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
-import { Button, Link, Grid, Box, Typography } from '@mui/material';
+import { Button, Grid, Box, Typography } from '@mui/material';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { registrationShema } from '../../../utils/validation/yupSchema';
 import { useNavigate } from 'react-router';
 import Input from '../../Input/Input';
 import styles from './styles.module.css';
+import { Link } from 'react-router-dom';
 
 // type formRegistration = {
 //   first_name: string;
@@ -118,11 +119,8 @@ const Registration: FC = () => {
       >
         <Typography variant="body1" sx={{ fontWeight: 400, color: '#797981' }}>Уже есть аккаунт?</Typography>
         <Link
-          className="link"
-          href="/"
-          variant="body2"
-          underline="none"
-          sx={{ py: 3, color: '#fff' }}
+          className={styles.link}
+          to="/"
         >
           Войти
         </Link>

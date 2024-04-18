@@ -1,10 +1,11 @@
 import {
   Box,
-  Button, Link, TextField, Typography,
+  Button, TextField, Typography,
 } from '@mui/material';
 import UnloggedUserHeader from '../../Header/UnloggedUserHeader';
 import Footer from '../../Footer/Footer';
 import styles from './styles.module.css';
+import { Link } from 'react-router-dom';
 
 export default function PasswordRecovery() {
   return (
@@ -49,11 +50,8 @@ export default function PasswordRecovery() {
         }}
         >
           <Link
-            className="link"
-            href="/"
-            variant="body2"
-            underline="none"
-            sx={{ py: 3, color: '#fff' }}
+            className={styles.link}
+            to="/"
           >
             Назад
           </Link>

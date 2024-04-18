@@ -37,7 +37,7 @@ export const tabConfig: TabConfig[] = [
 export const tableTabConfig: TabConfig[] = [
     {
         label: 'Новые',
-        path: '/students/',
+        path: '/students',
     },
     {
         label: 'Просмотренные',

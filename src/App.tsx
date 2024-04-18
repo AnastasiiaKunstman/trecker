@@ -19,7 +19,7 @@ function App() {
         <Route path="/vacancies" element={<VacancyForm />} />
         <Route path="/vacancies/active" element={<CardList />} />
         <Route path="/vacancies/archive" element={<CardList />} />
-        <Route path="/students/" element={<StudentTable />} />
+        <Route path="/students" element={<StudentTable />} />
         <Route path="/students/save" element={<StudentTable />} />
         <Route path="/students/invited" element={<InvitedStudents />} />
         <Route path="/students/viewed" element={<InvitedStudents />} />
