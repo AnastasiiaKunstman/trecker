@@ -17,11 +17,18 @@
     gap: 10px;
 }
 
+.box_question {
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   margin-top: 10px;
+}
+
 .link {
     color: #fff;
     text-decoration: none;
 }
-
 
 .link:hover {
     opacity: .7;
